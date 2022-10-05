@@ -2,19 +2,25 @@
     <div>
         <AppHeader></AppHeader>
         <div class="container">
-            <PostSection></PostSection>
+            <HomePage></HomePage>
+            <ContactsPage></ContactsPage>
+            <AboutPage></AboutPage>
         </div>
     </div>
 </template>
 
 <script>
-import PostSection from './posts/PostSection.vue';
+import HomePage from './pages/HomePage.vue';
 import AppHeader from './AppHeader.vue';
+import ContactsPage from './pages/ContactsPage.vue';
+import AboutPage from './pages/AboutPage.vue';
 export default {
     name: 'App',
     components: {
-        PostSection,
-        AppHeader
-    }
+    AppHeader,
+    HomePage,
+    ContactsPage,
+    AboutPage
+}
 };
 </script>
