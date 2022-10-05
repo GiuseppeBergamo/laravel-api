@@ -1,15 +1,17 @@
 <template>
-    <div class="content">
-        <div class="title m-b-md">
-            Work in progress
-            <h2>Sito in costruzione</h2>
+    <div>
+        <div class="container">
+            <PostSection></PostSection>
         </div>
-        
     </div>
 </template>
 
 <script>
+    import PostSection from './posts/PostSection.vue';
     export default {
         name: 'App',
+        components: {
+            PostSection,
+        }
     };
 </script>
