@@ -5,7 +5,7 @@
             <h6 class="card-subtitle mb-2 text-muted">Pubblicato il: {{ post.created_at }}</h6>
             <p class="card-text">{{ post.content }}</p>
             <a href="#" class="card-link">{{ post.image }}</a>
-            <a href="#" class="card-link">Another link</a>
+            <router-link :to="{ name: 'post-detail', params: { id: post.id }}" class="btn btn-primary btn-sm ml-3">Guarda post</router-link>
         </div>
     </div>
 
